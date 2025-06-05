@@ -1,5 +1,6 @@
 FROM              docker.io/redhat/ubi9
-RUN               dnf install libicu -y
+RUN               curl -L -o /etc/yum.repos.d/hashi.repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
+RUN               dnf install libicu make terraform -y
 RUN               useradd github
 USER              github
 WORKDIR           /home/github
