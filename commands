@@ -1,0 +1,3 @@
+docker run -d -e ORG=https://github.com/golive123 -e TOKEN=BTIL2UNECSVLM7QWA3KLG6DIIMM2C -e NAME=runner-test2 0fd7c92c0e48
+
+docker run -d  -e ORG=https://github.com/golive123 -e TOKEN=BTIL2UNECSVLM7QWA3KLG6DIIMM2C -e NAME=runner-test3 0fd7c92c0e48

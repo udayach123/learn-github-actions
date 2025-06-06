@@ -1,3 +1,3 @@
-#docker build -t rkalluru/github-runner .
-#docker push rkalluru/github-runner
-docker build .
+docker build -t udaych123/github-runner .
+docker push udaych123/github-runner
+
