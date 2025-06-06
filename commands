@@ -1,3 +1,5 @@
 docker run -d -e ORG=https://github.com/golive123 -e TOKEN=BTIL2UNECSVLM7QWA3KLG6DIIMM2C -e NAME=runner-test2 0fd7c92c0e48
 
 docker run -d  -e ORG=https://github.com/golive123 -e TOKEN=BTIL2UNECSVLM7QWA3KLG6DIIMM2C -e NAME=runner-test3 0fd7c92c0e48
+
+ansible-playbook -i vault.yourtherapist.in, -e ansible_user=devops18 -e ansible_password=Passw0rd@1234 tool_setup.yml -e tool_name=github-runner -e token=hvs.vDmeXxoN570Y46tfqceaShiB
