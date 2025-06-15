@@ -17,16 +17,19 @@ jobs:
     steps:
       - run: echo OK
   Qa_Deploy:
+    environment: Dev
     runs-on: ubuntu-latest
     needs: Dev_deploy
     steps:
       - run: echo OK
   Uat_Deploy:
+    environment: Qa
     runs-on: ubuntu-latest
     needs: Qa_deploy
     steps:
       - run: echo OK
   Prod_Deploy:
+    environment: Uat
     runs-on: ubuntu-latest
     needs: Uat_Deploy
     steps:
