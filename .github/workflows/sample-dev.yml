@@ -1,0 +1,12 @@
+name: Sample CICD
+on: [push, workflow_dispatch]
+jobs:
+  Build:
+    #runs-on: self-hosted
+    runs-on:  ubuntu-latest
+    steps:
+      - run: echo OK
+
+
+
+
