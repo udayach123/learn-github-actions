@@ -1,5 +1,8 @@
 name: Dev CICD
-on: [push, workflow_dispatch]
+on:
+  push:
+    branches:
+      - 'ROBO-**'
 jobs:
   Build:
     #runs-on: self-hosted
