@@ -6,7 +6,7 @@ on:
         - 'main'
 jobs:
   Reuse:
-    uses: roboproj\learn-github-actions\.github\workflows\sample-reusable.yml@main
+    uses: 'udayach123/learn-github-actions/.github/workflows/sample-reusable.yml@main'
 
 
 
