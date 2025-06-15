@@ -1,4 +1,4 @@
-name: Main CICD
+name: reusable CICD
 on:
   workflow_call:
 jobs:
