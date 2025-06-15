@@ -1,4 +1,4 @@
-name: Sample CICD
+name: Pr CICD
 on: [push, workflow_dispatch]
 jobs:
   Build:
