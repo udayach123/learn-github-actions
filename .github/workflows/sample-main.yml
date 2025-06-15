@@ -5,40 +5,8 @@ on:
     branches:
         - 'main'
 jobs:
-  Build:
-    #runs-on: self-hosted
-    runs-on:  ubuntu-latest
-    steps:
-      - run: echo OK
-  Test:
-    runs-on: ubuntu-latest
-    needs: Build
-    steps:
-      - run: echo OK
-  Dev_deploy:
-    runs-on: ubuntu-latest
-    needs: Test
-    steps:
-      - run: echo OK
-  Qa_Deploy:
-    environment: QA
-    runs-on: ubuntu-latest
-    needs: Dev_deploy
-    steps:
-      - run: echo OK
-  Uat_Deploy:
-    environment: UAT
-    runs-on: ubuntu-latest
-    needs: Qa_deploy
-    steps:
-      - run: echo OK
-  Prod_Deploy:
-    environment: PROD
-    runs-on: ubuntu-latest
-    needs: Uat_Deploy
-    steps:
-      - run: echo OK
-
+  Reuse:
+    uses: 'C:\Users\UdayaCharagundla\OneDrive-Kyndryl\Desktop\roboproj\learn-github-actions\.github\workflows\sample-reusable.yml@main'
 
 
 
